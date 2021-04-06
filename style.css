@@ -1,0 +1,135 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-image: url("img/Background.png");
+    max-height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.grid{
+
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 15vh 70vh 15vh;
+    grid-template-areas: "a h"
+                         "a m"
+                         "a m";
+
+}
+/*-------------------------------------------------------------------------------*/
+header{
+
+    grid-area: h;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+header h3{
+    position: relative;
+    padding-top: 4%;
+    padding-right: 5%;
+    color: rgb(207, 207, 207);
+    text-shadow: 1px 1px 3px black;
+    text-transform: uppercase;
+    font-weight: 60;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+header h3:hover{
+    color: #ffff;
+    transition: 0.4s ease;
+}
+/*-------------------------------------------------------------------------------*/
+main{
+    grid-area: m;
+}
+
+.battle-g{
+
+    width: 35%;
+
+    margin-top: 25%;
+    margin-left: 60%;
+    text-align: right;
+}
+
+.battle-g p{
+    color: #ffff;
+    text-shadow: 1px 1px 3px black;
+}
+.battle-g h1{
+    color: #ffff;
+    font-size: 40px;
+    text-shadow: 1px 1px 3px black;
+    text-transform: uppercase;
+}
+.battle-g button{
+
+    background-color: rgb(255, 136, 0);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+
+    border-radius: 5px;
+}
+.battle-g button:active{
+    background-color: rgb(180, 98, 4);
+}
+/*-------------------------------------------------------------------------------*/
+aside{
+
+    grid-area: a;
+    background: #28194D;
+
+    opacity: 0.8;
+
+    display: flex;
+    flex-direction: column;
+
+}
+aside h3{
+
+    margin-left: 12%;
+    color: #71668d;
+    text-shadow: 1px 1px 3px black;
+    text-transform: uppercase;
+}
+.row-a{ 
+
+    width: 75%;
+    height: 8%;
+    
+    margin-top: 5%;
+    margin-left: 12%;
+}
+.img-a img{
+
+    margin-top: 15px;
+    margin-left: 12%;
+
+    width: 85%;
+    height: 20%;
+
+    border-style: solid;
+    border-color: #30254b;
+    border-radius: 10px;
+    transition: 0.4s ease; 
+}
+.img-a img:hover{
+
+    margin-left: 40%;
+    filter: brightness(1.2);
+    border-color: rgb(255, 136, 0);
+    transition: 0.4s ease; 
+}
+/*-------------------------------------------------------------------------------*/
